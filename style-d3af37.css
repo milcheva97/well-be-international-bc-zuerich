@@ -171,6 +171,14 @@ body.lightbox-open { overflow:hidden; }
 .benefit-band p { color:#526875; }
 @media (max-width:900px) { .purpose-grid article,.purpose-grid article:nth-child(-n+2) { border-color:rgba(16,42,59,.13); }.benefit-band article { border-bottom-color:rgba(16,42,59,.16); } }
 @media (max-width:600px) { .purpose-grid article,.purpose-grid article:nth-child(-n+2) { border-top-color:rgba(16,42,59,.16); } }
+
+/* Light translucent header over the hero and page content. */
+.nav-shell { border-bottom-color:rgba(16,42,59,.12); background:rgba(250,248,242,.88); color:var(--navy); backdrop-filter:blur(16px) saturate(135%); box-shadow:0 8px 28px rgba(16,42,59,.1); }
+.logo-text { color:var(--navy); }
+nav a:hover { color:#8f7624; }
+.language-switch span { color:rgba(16,42,59,.28); }
+.language-switch a { color:rgba(16,42,59,.52); }
+.language-switch a:hover,.language-switch a.active { color:#9b7d1f; }
 @media (max-width:900px) { .benefit-grid { grid-template-columns:1fr; } }
 @media (max-width:900px) { .codex-panel { grid-template-columns:1fr;gap:38px;padding:44px; }.codex-intro { padding-right:0; }.codex-grid { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:600px) { .codex-panel { margin-top:65px;padding:34px 24px; }.codex-intro h3 { font-size:34px; }.codex-grid { grid-template-columns:1fr; }.codex-grid article { min-height:0; } }
