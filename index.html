@@ -67,16 +67,17 @@
                             <figure class="gallery-item gallery-item-4"><img src="gallery-we4.jpeg" alt="Impression vom IBC Zürich Anlass 4" loading="lazy" decoding="async"></figure>
                             <figure class="gallery-item gallery-item-5"><img src="gallery-we5.jpeg" alt="Impression vom IBC Zürich Anlass 5" loading="lazy" decoding="async"></figure>
                             <figure class="gallery-item gallery-item-6"><img src="gallery-we6.jpeg" alt="Impression vom IBC Zürich Anlass 6" loading="lazy" decoding="async"></figure>
-                            <figure class="gallery-item gallery-item-7"><img src="gallery-we7.jpeg" alt="Impression vom IBC Zürich Anlass 7" loading="lazy" decoding="async"></figure>
-                            <figure class="gallery-item gallery-item-8"><img src="gallery-we8.jpeg" alt="Impression vom IBC Zürich Anlass 8" loading="lazy" decoding="async"></figure>
-                            <figure class="gallery-item gallery-item-9"><img src="gallery-we9.jpeg" alt="Impression vom IBC Zürich Anlass 9" loading="lazy" decoding="async"></figure>
-                            <figure class="gallery-item gallery-item-10"><img src="gallery-we10.jpeg" alt="Impression vom IBC Zürich Anlass 10" loading="lazy" decoding="async"></figure>
-                            <figure class="gallery-item gallery-item-11"><img src="gallery-we11.jpeg" alt="Impression vom IBC Zürich Anlass 11" loading="lazy" decoding="async"></figure>
-                            <figure class="gallery-item gallery-item-12"><img src="gallery-we12.jpeg" alt="Impression vom IBC Zürich Anlass 12" loading="lazy" decoding="async"></figure>
-                            <figure class="gallery-item gallery-item-13"><img src="gallery-we13.jpeg" alt="Impression vom IBC Zürich Anlass 13" loading="lazy" decoding="async"></figure>
-                            <figure class="gallery-item gallery-item-14"><img src="gallery-we14.jpeg" alt="Impression vom IBC Zürich Anlass 14" loading="lazy" decoding="async"></figure>
-                            <figure class="gallery-item gallery-item-15"><img src="gallery-we15.jpeg" alt="Impression vom IBC Zürich Anlass 15" loading="lazy" decoding="async"></figure>
+                            <figure class="gallery-item gallery-item-7 gallery-extra"><img src="gallery-we7.jpeg" alt="Impression vom IBC Zürich Anlass 7" loading="lazy" decoding="async"></figure>
+                            <figure class="gallery-item gallery-item-8 gallery-extra"><img src="gallery-we8.jpeg" alt="Impression vom IBC Zürich Anlass 8" loading="lazy" decoding="async"></figure>
+                            <figure class="gallery-item gallery-item-9 gallery-extra"><img src="gallery-we9.jpeg" alt="Impression vom IBC Zürich Anlass 9" loading="lazy" decoding="async"></figure>
+                            <figure class="gallery-item gallery-item-10 gallery-extra"><img src="gallery-we10.jpeg" alt="Impression vom IBC Zürich Anlass 10" loading="lazy" decoding="async"></figure>
+                            <figure class="gallery-item gallery-item-11 gallery-extra"><img src="gallery-we11.jpeg" alt="Impression vom IBC Zürich Anlass 11" loading="lazy" decoding="async"></figure>
+                            <figure class="gallery-item gallery-item-12 gallery-extra"><img src="gallery-we12.jpeg" alt="Impression vom IBC Zürich Anlass 12" loading="lazy" decoding="async"></figure>
+                            <figure class="gallery-item gallery-item-13 gallery-extra"><img src="gallery-we13.jpeg" alt="Impression vom IBC Zürich Anlass 13" loading="lazy" decoding="async"></figure>
+                            <figure class="gallery-item gallery-item-14 gallery-extra"><img src="gallery-we14.jpeg" alt="Impression vom IBC Zürich Anlass 14" loading="lazy" decoding="async"></figure>
+                            <figure class="gallery-item gallery-item-15 gallery-extra"><img src="gallery-we15.jpeg" alt="Impression vom IBC Zürich Anlass 15" loading="lazy" decoding="async"></figure>
                     </div>
+        <div class="gallery-action"><button class="gallery-toggle" type="button" aria-expanded="false" data-show="Alle Fotos anzeigen" data-hide="Weniger anzeigen">Alle Fotos anzeigen<span aria-hidden="true">＋</span></button></div>
     </section>
 
     <section class="membership section" id="mitgliedschaft">
@@ -115,6 +116,17 @@
             sessionStorage.setItem(storageKey, String(window.scrollY));
         });
     });
+
+    const gallery = document.querySelector('.gallery');
+    const galleryToggle = document.querySelector('.gallery-toggle');
+    if (gallery && galleryToggle) {
+        galleryToggle.addEventListener('click', () => {
+            const expanded = gallery.classList.toggle('is-expanded');
+            galleryToggle.setAttribute('aria-expanded', String(expanded));
+            galleryToggle.firstChild.nodeValue = expanded ? galleryToggle.dataset.hide : galleryToggle.dataset.show;
+            galleryToggle.querySelector('span').textContent = expanded ? '−' : '＋';
+        });
+    }
 })();
 </script>
 </body>
