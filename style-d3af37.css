@@ -153,6 +153,24 @@ body.lightbox-open { overflow:hidden; }
 @media (max-width:600px) { .standard-agenda { padding:32px 24px; }.agenda-grid { grid-template-columns:1fr; }.agenda-grid article,.agenda-grid article:nth-child(2n),.agenda-grid article:nth-child(3n),.agenda-grid article:nth-last-child(-n+2),.agenda-grid article:nth-last-child(-n+3) { grid-template-columns:72px 1fr;column-gap:24px;border-bottom:1px solid rgba(255,255,255,.14); }.agenda-grid article:last-child { border-bottom:0; } }
 @media (max-width:900px) { .event { grid-template-columns:110px 1fr; }.event p,.place { grid-column:2; } }
 @media (max-width:600px) { .event { grid-template-columns:1fr;gap:9px;padding:20px 0; }.event time,.event div,.event p,.place { grid-column:1;text-align:left;margin:0; } }
+
+/* Light visual sequence for the first three sections after the hero. */
+.intro { background:radial-gradient(circle at 8% 14%,rgba(211,175,55,.16),transparent 27%),radial-gradient(circle at 92% 18%,rgba(30,91,132,.13),transparent 34%),linear-gradient(135deg,#faf8f2 0%,#edf2f1 58%,#e3ecef 100%); color:var(--ink); }
+.intro .section-label,.purpose-heading>span { color:var(--ink); }
+.intro h2 em { color:#8f7624; }
+.intro .intro-copy>p { color:#415966; }
+.intro .principles span { color:#755f1d; border-color:rgba(211,175,55,.45); background:rgba(255,255,255,.56); }
+.club-purpose { border-top-color:rgba(16,42,59,.18); }
+.purpose-grid article { border-color:rgba(16,42,59,.13); background:rgba(255,255,255,.58); box-shadow:0 14px 32px rgba(16,42,59,.08); }
+.purpose-grid article:after { background:rgba(211,175,55,.11); }
+.purpose-grid article:hover { border-color:rgba(211,175,55,.6); background:#fff; }
+.purpose-grid p { color:#526875; }
+.benefit-band { background:radial-gradient(circle at 10% 100%,rgba(211,175,55,.15),transparent 32%),linear-gradient(115deg,#fffdf7,#edf2ef 55%,#e3edf0); color:var(--ink); border-top:1px solid rgba(16,42,59,.08); border-bottom:1px solid rgba(16,42,59,.08); }
+.benefit-heading { color:var(--ink); }
+.benefit-band article { border-right-color:rgba(16,42,59,.18); }
+.benefit-band p { color:#526875; }
+@media (max-width:900px) { .purpose-grid article,.purpose-grid article:nth-child(-n+2) { border-color:rgba(16,42,59,.13); }.benefit-band article { border-bottom-color:rgba(16,42,59,.16); } }
+@media (max-width:600px) { .purpose-grid article,.purpose-grid article:nth-child(-n+2) { border-top-color:rgba(16,42,59,.16); } }
 @media (max-width:900px) { .benefit-grid { grid-template-columns:1fr; } }
 @media (max-width:900px) { .codex-panel { grid-template-columns:1fr;gap:38px;padding:44px; }.codex-intro { padding-right:0; }.codex-grid { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:600px) { .codex-panel { margin-top:65px;padding:34px 24px; }.codex-intro h3 { font-size:34px; }.codex-grid { grid-template-columns:1fr; }.codex-grid article { min-height:0; } }
