@@ -180,14 +180,18 @@ nav a:hover { color:#8f7624; }
 .language-switch a { color:rgba(16,42,59,.52); }
 .language-switch a:hover,.language-switch a.active { color:#9b7d1f; }
 .nav-shell { height:108px; }
-.logo-lockup { width:174px; height:92px; }
-.logo-symbol { width:88px; height:58px; background-size:142px auto; }
-.logo-text { font-size:14px; }
+.logo-lockup { width:205px; height:98px; }
+.logo-symbol { width:108px; height:68px; background-size:174px auto; }
+.logo-text { font-size:15px; }
+.brand { font-size:14px; }
+nav { font-size:15px; }
+.language-switch { font-size:12px; }
+.nav-cta { font-size:14px; }
 @media (max-width:600px) {
   .nav-shell { height:88px; }
-  .logo-lockup { width:142px; height:80px; }
-  .logo-symbol { width:72px; height:49px; background-size:118px auto; }
-  .logo-text { font-size:12px; }
+  .logo-lockup { width:160px; height:82px; }
+  .logo-symbol { width:86px; height:55px; background-size:140px auto; }
+  .logo-text { font-size:13px; }
 }
 @media (max-width:900px) { .benefit-grid { grid-template-columns:1fr; } }
 @media (max-width:900px) { .codex-panel { grid-template-columns:1fr;gap:38px;padding:44px; }.codex-intro { padding-right:0; }.codex-grid { grid-template-columns:repeat(2,1fr); } }
