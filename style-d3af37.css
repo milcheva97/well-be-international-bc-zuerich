@@ -198,6 +198,7 @@ nav { font-size:15px; }
   .logo-symbol { width:86px; height:60px; background-size:140px auto; }
   .logo-text { font-size:13px; }
   .hero .frame-2 img { object-position:left center; }
+  .hero .frame-4 img { object-position:left center; }
 }
 @media (max-width:900px) { .benefit-grid { grid-template-columns:1fr; } }
 @media (max-width:900px) { .codex-panel { grid-template-columns:1fr;gap:38px;padding:44px; }.codex-intro { padding-right:0; }.codex-grid { grid-template-columns:repeat(2,1fr); } }
