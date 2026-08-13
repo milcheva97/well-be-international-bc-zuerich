@@ -182,7 +182,7 @@ nav a:hover { color:#8f7624; }
 .hero-shade { background:linear-gradient(90deg,rgba(3,18,27,.74) 0%,rgba(3,18,27,.49) 28%,rgba(3,18,27,.19) 49%,rgba(3,18,27,.03) 70%,transparent 100%),linear-gradient(0deg,rgba(3,18,27,.17),transparent 45%); }
 .nav-shell { height:108px; }
 .logo-lockup { width:205px; height:98px; }
-.logo-symbol { width:108px; height:68px; background-size:174px auto; }
+.logo-symbol { width:108px; height:78px; background-size:174px auto; }
 .logo-text { font-size:15px; }
 .brand { font-size:14px; }
 nav { font-size:15px; }
@@ -191,7 +191,7 @@ nav { font-size:15px; }
 @media (max-width:600px) {
   .nav-shell { height:88px; }
   .logo-lockup { width:160px; height:82px; }
-  .logo-symbol { width:86px; height:55px; background-size:140px auto; }
+  .logo-symbol { width:86px; height:64px; background-size:140px auto; }
   .logo-text { font-size:13px; }
 }
 @media (max-width:900px) { .benefit-grid { grid-template-columns:1fr; } }
