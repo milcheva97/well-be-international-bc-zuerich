@@ -180,6 +180,9 @@ nav a:hover { color:#8f7624; }
 .language-switch a { color:rgba(16,42,59,.52); }
 .language-switch a:hover,.language-switch a.active { color:#9b7d1f; }
 .hero-shade { background:linear-gradient(90deg,rgba(3,18,27,.74) 0%,rgba(3,18,27,.49) 28%,rgba(3,18,27,.19) 49%,rgba(3,18,27,.03) 70%,transparent 100%),linear-gradient(0deg,rgba(3,18,27,.17),transparent 45%); }
+.footer-logo { width:205px; gap:1px; }
+.footer-logo-symbol { width:108px; height:74px; background-size:174px auto; }
+.footer-logo-text { font-size:15px; }
 .nav-shell { height:108px; }
 .logo-lockup { width:205px; height:98px; }
 .logo-symbol { width:108px; height:74px; background-size:174px auto; }
